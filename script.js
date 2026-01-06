@@ -41,17 +41,6 @@ function borrarTarea(vNsp) {
     Pendientes();
 };
 
-document.addEventListener('keyup', function(event) {
-    if (event.key=='Enter') {
-        const tarea = elInput.value;
-        if (tarea) {
-            agregarTarea();
-        }
-        elInput.value = '';
-    }
-    Pendientes();
-});
-
 function Pendientes() {
     let MenTareas = document.querySelector("#SinTareas");
     const Total = elListado.children.length;
@@ -67,3 +56,14 @@ function Pendientes() {
         MenTareas.textContent = 'No hay tareas pendientes 😊';
     }
 };
+
+document.addEventListener('keyup', function(event) {
+    if (event.key=='Enter') {
+        const tarea = elInput.value;
+        if (tarea) {
+            agregarTarea();
+        }
+        elInput.value = '';
+    }
+    Pendientes();
+});

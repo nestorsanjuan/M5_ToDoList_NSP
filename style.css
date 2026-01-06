@@ -213,17 +213,19 @@ hr {
     border-style: dashed;
 }
 
-.estudiante {
-    transition: text-shadow .4s ease;
+.efecto {
+    transition: text-shadow .4s, color .4s ease;
 }
 
-.estudiante:hover {
+.efecto:hover {
     cursor: pointer;
+    color: var(--Color001);
     text-shadow: 0px 0px 10px var(--Color005);
 }
 
 .actividad {
     background-color: #0F2F4444;
+    font-size: 18px;    
     color: var(--Color009);
     margin: auto;
     padding: 5px;
@@ -236,7 +238,7 @@ hr {
 .definicion {
     background-color: #33333366;
     text-align: left;
-    font-style: italic;
+    font-size: 14px;
     box-shadow: none;
 }
 
